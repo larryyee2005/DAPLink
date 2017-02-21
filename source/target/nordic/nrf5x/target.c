@@ -25,7 +25,7 @@
 #include "flash_blob.c"
 
 // target information
-target_cfg_t target_device = {  // Default is nRF51
+target_cfg_t target_device_nrf51 = {  // Default is nRF51
     .sector_size    = 1024,
     .sector_cnt     = (KB(256) / 1024),
     .flash_start    = 0,
@@ -36,7 +36,7 @@ target_cfg_t target_device = {  // Default is nRF51
     .erase_reset    = 1,
 };
 
-target_cfg_t target_device_nrf52 = {
+target_cfg_t target_device = {
     .sector_size    = 4096,
     .sector_cnt     = (KB(512) / 1024),
     .flash_start    = 0,

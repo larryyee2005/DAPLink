@@ -42,7 +42,7 @@ target_cfg_t target_device = {
     .flash_start    = 0,
     .flash_end      = KB(512),
     .ram_start      = 0x20000000,
-    .ram_end        = 0x20008000,
+    .ram_end        = 0x20010000,
     .flash_algo     = (program_target_t *) &flash_nrf52,
     .erase_reset    = 1,
 };
